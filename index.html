@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Data Dashboard</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 20px;
+}
+h1 { color: #123456; }
+.card {
+  background: white;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #ddd;
+}
+button {
+  padding: 12px 18px;
+  background: #16803c;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+<h1>Market Data Dashboard</h1>
+<p>Live Market Data Monitoring</p>
+
+<div class="card">
+<h3>GIFT Nifty</h3>
+<p id="gift">Waiting for data source...</p>
+</div>
+
+<div class="card">
+<h3>WTI Crude Oil</h3>
+<p id="crude">Waiting for data source...</p>
+</div>
+
+<div class="card">
+<h3>USD / INR</h3>
+<p id="usd">Waiting for data source...</p>
+</div>
+
+<div class="card">
+<h3>US 10-Year Yield</h3>
+<p id="yield">Waiting for data source...</p>
+</div>
+
+<div class="card">
+<h3>FII Net Cash Market</h3>
+<p id="fii">Waiting for data source...</p>
+</div>
+
+<button onclick="location.reload()">Refresh Dashboard</button>
+<p>Auto-refresh interface: Ready for data integration.</p>
+</body>
+</html>
